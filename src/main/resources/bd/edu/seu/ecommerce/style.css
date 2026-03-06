@@ -1,0 +1,98 @@
+.menuBar{
+    -fx-background-color:#001f7f;
+}
+.sidebar{
+    -fx-cursor: hand;
+    -fx-background-color:#ffffff;
+}
+.sidebar:hover{
+    -fx-background-color:#E6F5FF;
+}
+.detailShowanchor{
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 1, 1);
+}
+.addProductBtn{
+    -fx-text-fill:#ffffff;
+   -fx-background-color:#001f7f;
+    -fx-border-radius: 100px;
+    -fx-background-radius:5px;
+    -fx-cursor: hand;
+}
+.addProductBtn:hover{
+    -fx-background-color:#0381EA;
+}
+.regsterBtn{
+    -fx-cursor: hand;
+    -fx-text-fill:#ffffff;
+    -fx-border-radius: 100px;
+    -fx-background-radius:5px;
+    -fx-background-color:#001f7f;
+}
+.regsterBtn:hover{
+    -fx-background-color:#0381EA;
+}
+.userLoginbg{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 0, 4);
+}
+.userLoginBtn{
+    -fx-cursor: hand;
+    -fx-text-fill:#ffffff;
+    -fx-background-color:#001f7f;
+}
+.userLoginBtn:hover{
+    -fx-background-color:#0381EA;
+}
+.topLoginLabel:hover{
+    -fx-text-fill:#0381EA;
+}
+.buyBtn{
+    -fx-padding:5px;
+    -fx-background-color:#001f7f;
+    -fx-border-color: none;
+}
+.buyBtn:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#0381EA
+}
+/*Line Chart*/
+.chart-title {
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke:#d3004e;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #d3004e;
+}
+
+.chart-symbol {
+    -fx-background-color: #ffffff, #d3004e;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5px;
+}
+.Uhmbtn{
+    -fx-cursor: hand;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color:#001f7f;
+}
+.Uhmbtn:hover{
+    -fx-background-color:#d3004e;
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="780.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.ecommerce.controller.HomesceneController">
+   <children>
+      <ImageView fitHeight="68.0" fitWidth="163.0" layoutX="109.0" layoutY="24.0">
+         <image>
+            <Image url="@Logo2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="500.0" prefWidth="407.0" style="-fx-background-color: #001f7f;">
+         <children>
+            <Label layoutX="71.0" layoutY="35.0" prefHeight="59.0" prefWidth="269.0" text="WELCOME TO EVALY " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="86.0" fitWidth="232.0" layoutX="82.0" layoutY="150.0">
+               <image>
+                  <Image url="@lg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="236.0" prefHeight="59.0" prefWidth="299.0" text="SINCE : 2020-2025" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="288.0" prefHeight="25.0" prefWidth="305.0" text="Lorem Ipsum is simply dummy text of the " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="305.0" prefHeight="25.0" prefWidth="314.0" text=" Lorem Ipsum has been the industry's the i" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="322.0" prefHeight="17.0" prefWidth="314.0" text="It is a long established fact that a reader w" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="339.0" prefHeight="25.0" prefWidth="314.0" text="Contrary to popular belief, Lorem Ipsum is " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="64.0" layoutY="93.0" opacity="0.34" prefHeight="3.0" prefWidth="269.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="456.0" layoutY="284.0" mnemonicParsing="false" onAction="#userEvent" prefHeight="45.0" prefWidth="278.0" styleClass="Uhmbtn" stylesheets="@style.css" text="USER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="524.0" layoutY="296.0">
+         <image>
+            <Image url="@hm.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="456.0" layoutY="360.0" mnemonicParsing="false" onAction="#adminEvent" prefHeight="45.0" prefWidth="278.0" styleClass="Uhmbtn" stylesheets="@style.css" text="ADMIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="524.0" layoutY="370.0">
+         <image>
+            <Image url="@amd.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="526.0" layoutY="68.0" prefHeight="134.0" prefWidth="137.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: #001f7f;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="82.0" layoutX="28.0" layoutY="24.0">
+               <image>
+                  <Image url="@prfl.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="548.0" layoutY="219.0" text="LOGIN" textFill="#d3004e">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="446.0" text="Desktop Application version-2.0.45" textFill="#ababab">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

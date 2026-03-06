@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: #EFF9FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.ecommerce.controller.DashboardController">
+   <children>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="128.0">
+
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="607.0" layoutY="31.0">
+
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="171.0">
+
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="254.0">
+
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="212.0">
+
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="296.0">
+
+      </ImageView>
+      <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="610.0" layoutY="33.0">
+
+      </ImageView>
+      <AnchorPane prefHeight="80.0" prefWidth="780.0" styleClass="menuBar" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="searchBaerField" layoutX="238.0" layoutY="24.0" onKeyReleased="#searchBaeEvent" prefHeight="33.0" prefWidth="336.0" promptText="Search in amar shop" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="541.0" layoutY="31.0">
+               <image>
+                  <Image url="@search.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="615.0" layoutY="31.0" onMouseClicked="#gotouserLogin" style="-fx-cursor: hand;" styleClass="topLoginLabel" stylesheets="@style.css" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="596.0" layoutY="32.0">
+               <image>
+                  <Image url="@prfl.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="674.0" layoutY="33.0">
+               <image>
+                  <Image url="@shopping-cart-white-icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="695.0" layoutY="31.0" onMouseClicked="#myCardEvent" style="-fx-cursor: hand;" styleClass="topLoginLabel" stylesheets="@style.css" text="My Card" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="170.0" layoutX="20.0" layoutY="9.0">
+               <image>
+                  <Image url="@lg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="80.0" prefHeight="520.0" prefWidth="196.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" prefHeight="48.0" prefWidth="197.0" styleClass="sidebar" stylesheets="@style.css" text="Home">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="14.0">
+               <image>
+                  <Image url="@h.png" />
+               </image>
+            </ImageView>
+            <Separator layoutY="48.0" opacity="0.4" prefHeight="3.0" prefWidth="197.0" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="49.0" prefHeight="48.0" prefWidth="197.0" styleClass="sidebar" stylesheets="@style.css" text="Profile">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutY="97.0" opacity="0.4" prefHeight="3.0" prefWidth="197.0" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="98.0" prefHeight="48.0" prefWidth="197.0" styleClass="sidebar" stylesheets="@style.css" text="Contact">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutY="146.0" opacity="0.4" prefHeight="3.0" prefWidth="197.0" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="147.0" prefHeight="48.0" prefWidth="197.0" styleClass="sidebar" stylesheets="@style.css" text="Setting">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutY="195.0" opacity="0.4" prefHeight="3.0" prefWidth="197.0" />
+            <Label alignment="CENTER" layoutX="1.0" layoutY="196.0" onMouseClicked="#logoutEvent" prefHeight="48.0" prefWidth="197.0" styleClass="sidebar" stylesheets="@style.css" text="Logout">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutY="244.0" opacity="0.4" prefHeight="3.0" prefWidth="197.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="210.0">
+               <image>
+                  <Image url="@5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="112.0">
+               <image>
+                  <Image url="@1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="63.0">
+               <image>
+                  <Image url="@6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="161.0">
+               <image>
+                  <Image url="@3.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="478.0" mnemonicParsing="false" onAction="#adminEvent" prefHeight="41.0" prefWidth="198.0" style="-fx-border-radius: none; -fx-background-radius: none;" styleClass="buyBtn" stylesheets="@style.css" text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="40.0" layoutY="487.0">
+               <image>
+                  <Image url="@prfl.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="dashboardTable" layoutX="210.0" layoutY="90.0" onMouseClicked="#onMousClick" prefHeight="244.0" prefWidth="558.0" style="-fx-border-color: #ffffff;" styleClass="detailShowanchor" stylesheets="@style.css">
+        <columns>
+          <TableColumn fx:id="nameColumn" text="Name" />
+          <TableColumn fx:id="typeColumn" text="Type" />
+            <TableColumn fx:id="sizeColumn" prefWidth="70.0" text="Size" />
+            <TableColumn fx:id="colorColumn" prefWidth="85.0" text="Color" />
+            <TableColumn fx:id="detailsColumn" prefWidth="100.0" text="Details" />
+            <TableColumn fx:id="quantityColumn" prefWidth="60.0" text="Available" />
+            <TableColumn fx:id="priceColumn" text="Price" />
+            <TableColumn fx:id="imagesColumn" prefWidth="75.0" text="Image" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="210.0" layoutY="349.0" prefHeight="229.0" prefWidth="558.0" styleClass="detailShowanchor" stylesheets="@style.css">
+         <children>
+            <Button layoutX="391.0" layoutY="86.0" mnemonicParsing="false" onAction="#gotoBuynowEvent" prefHeight="35.0" prefWidth="150.0" styleClass="buyBtn" stylesheets="@style.css" text="Buy Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="391.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#addtocardEvent" prefHeight="35.0" prefWidth="150.0" styleClass="buyBtn" stylesheets="@style.css" text="Add to Card" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Separator layoutX="370.0" opacity="0.31" orientation="VERTICAL" prefHeight="229.0" prefWidth="14.0" />
+            <Label layoutX="387.0" layoutY="30.0" text="Price :" textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="36.0" prefHeight="27.0" prefWidth="66.0" text="Name : " textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="180.0" layoutY="65.0" prefHeight="21.0" prefWidth="56.0" text="Type : " textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="181.0" layoutY="93.0" prefHeight="21.0" prefWidth="44.0" text="Size : " textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="179.0" layoutY="120.0" prefHeight="21.0" prefWidth="58.0" text="Color :" textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <ImageView fx:id="cardImageViwe" fitHeight="20.0" fitWidth="20.0" layoutX="399.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@shopping-cart-white-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="408.0" layoutY="93.0">
+               <image>
+                  <Image url="@bag.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageView" fitHeight="181.0" fitWidth="161.0" layoutX="8.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="180.0" layoutY="147.0" prefHeight="21.0" prefWidth="66.0" text="Details :" textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="174.0" prefHeight="21.0" prefWidth="78.0" text="Quantity :" textFill="#001f7f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel" layoutX="451.0" layoutY="32.0" prefHeight="30.0" prefWidth="104.0" textFill="#d3004e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="246.0" layoutY="37.0" prefHeight="27.0" prefWidth="124.0" textFill="#d3004e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeLabel" layoutX="230.0" layoutY="66.0" prefHeight="21.0" prefWidth="144.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="sizeLabel" layoutX="228.0" layoutY="92.0" prefHeight="21.0" prefWidth="135.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="colorLabel" layoutX="236.0" layoutY="121.0" prefHeight="21.0" prefWidth="135.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailLabel" layoutX="242.0" layoutY="149.0" prefHeight="21.0" prefWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="quantityLabel" layoutX="256.0" layoutY="175.0" prefHeight="21.0" prefWidth="118.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

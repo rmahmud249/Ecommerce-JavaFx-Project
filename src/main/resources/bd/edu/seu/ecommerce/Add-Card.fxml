@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.ecommerce.controller.AddcardController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="780.0" styleClass="menuBar" stylesheets="@style.css">
+         <children>
+            <TextField layoutX="253.0" layoutY="24.0" prefHeight="33.0" prefWidth="336.0" promptText="Search in amar shop" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="556.0" layoutY="31.0">
+               <image>
+                  <Image url="@search.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="637.0" layoutY="26.0" mnemonicParsing="false" onAction="#dashboardEvent" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #d3004e; -fx-cursor: hand;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="66.0" fitWidth="178.0" layoutX="21.0" layoutY="7.0">
+               <image>
+                  <Image url="@lg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="cardTable" layoutX="120.0" layoutY="189.0" prefHeight="252.0" prefWidth="541.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="90.0" text="Name" />
+          <TableColumn fx:id="typeColumn" prefWidth="90.0" text="Type" />
+            <TableColumn fx:id="sizeColumn" prefWidth="90.0" text="Size" />
+            <TableColumn fx:id="colorColumn" prefWidth="90.0" text="Color" />
+            <TableColumn fx:id="detailsColumn" prefWidth="90.0" text="Details" />
+            <TableColumn fx:id="priceColumn" prefWidth="90.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="79.0" prefHeight="45.0" prefWidth="780.0" style="-fx-background-color: #E6F5FF;" text="My Card" textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="323.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#removeProduct" prefHeight="40.0" prefWidth="135.0" styleClass="buyBtn" stylesheets="@style.css" text="REMOVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="502.0" layoutY="442.0" text="Total Price :" textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLabel" layoutX="597.0" layoutY="442.0" prefHeight="25.0" prefWidth="79.0" textFill="#d3004e">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="780.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.ecommerce.controller.LoginUserController">
+   <children>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="613.0" layoutY="28.0">
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="22.0" layoutY="172.0" />
+      <AnchorPane prefHeight="500.0" prefWidth="393.0" styleClass="menuBar" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="202.0" layoutX="84.0" layoutY="139.0">
+               <image>
+                  <Image url="@lg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="231.0" prefHeight="25.0" prefWidth="305.0" text="Lorem Ipsum is simply dummy text of the " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="248.0" prefHeight="25.0" prefWidth="314.0" text=" Lorem Ipsum has been the industry's the i" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="265.0" prefHeight="17.0" prefWidth="314.0" text="It is a long established fact that a reader w" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="282.0" prefHeight="25.0" prefWidth="314.0" text="Contrary to popular belief, Lorem Ipsum is " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="126.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#gotoHomeEvent" prefHeight="40.0" prefWidth="139.0" style="-fx-background-color: #d3004e; -fx-cursor: hand; -fx-border-radius: 5; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="showPassField" layoutX="457.0" layoutY="185.0" prefHeight="40.0" prefWidth="250.0" styleClass="adminEmil" stylesheets="@style.css">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="441.0" layoutY="23.0" text="LOGIN YOUR ACCOUNT" textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="458.0" layoutY="105.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter your email" styleClass="adminEmil" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginButton" layoutX="458.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginEvent" prefHeight="40.0" prefWidth="252.0" styleClass="userLoginBtn" stylesheets="@style.css" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="456.0" layoutY="185.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter password" styleClass="adminEmil" stylesheets="@style.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="461.0" layoutY="153.0" text="Password:" textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="80.0" text="E-mail :" textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkboxField" layoutX="682.0" layoutY="196.0" mnemonicParsing="false" onAction="#passwordShow" />
+      <Button layoutX="462.0" layoutY="357.0" mnemonicParsing="false" onAction="#googleEvent" prefHeight="40.0" prefWidth="250.0" styleClass="googleBtnField" stylesheets="@style.css" text="Google">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="462.0" layoutY="420.0" mnemonicParsing="false" onAction="#facebookEvent" prefHeight="40.0" prefWidth="250.0" styleClass="facebookBtnField" stylesheets="@style.css" text="Facebook">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="501.0" layoutY="365.0">
+         <image>
+            <Image url="@Google.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="491.0" layoutY="426.0">
+         <image>
+            <Image url="@Facebook.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="477.0" layoutY="298.0" text="Don't have an account? " textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="326.0" text="Or, Login with" textFill="#001f7f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="632.0" layoutY="298.0" onMouseClicked="#gotoRegisterEvent" style="-fx-cursor: hand;" styleClass="registerLink" stylesheets="@style.css" text="Register" textFill="#001be8" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="447.0" layoutY="66.0" opacity="0.51" prefHeight="4.0" prefWidth="273.0" />
+      <Label fx:id="passwordError" layoutX="456.0" layoutY="225.0" prefHeight="17.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
